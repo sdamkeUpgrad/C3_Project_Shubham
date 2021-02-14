@@ -69,5 +69,12 @@ class RestaurantTest {
         assertEquals(119 + 269 , orderValue);
     }
 
+    @Test
+    public void get_order_value_should_return_zero_when_empty_list_of_item_names_is_passed_to_it(){
+        String[] selectedMenuItems = {};
+        int orderValue = restaurant.getOrderValue(selectedMenuItems);
+        assertEquals(0 , orderValue);
+    }
+
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
