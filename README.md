@@ -1,2 +1,2 @@
 # C3_Project_Shubham
-Upgrad restaurant finder problem
+Restaurant finder problem of Upgrad
