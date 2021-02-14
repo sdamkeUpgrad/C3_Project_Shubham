@@ -58,4 +58,16 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>ORDER VALUE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void get_order_value_should_return_total_value_of_the_order_when_list_of_item_names_is_passed_to_it(){
+        String[] selectedMenuItems = {"Sweet corn soup", "Vegetable lasagne"};
+        int orderValue = restaurant.getOrderValue(selectedMenuItems);
+        assertEquals(119 + 269 , orderValue);
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
